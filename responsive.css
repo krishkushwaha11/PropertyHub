@@ -1,0 +1,172 @@
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .properties-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .footer-section:last-child {
+        grid-column: span 4;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .localities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-section:last-child {
+        grid-column: span 3;
+    }
+    
+    .app-image {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+    }
+    
+    .logo-container {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .search-container {
+        flex: 0 0 100%;
+        order: 3;
+        margin-top: 15px;
+    }
+    
+    .user-actions {
+        margin-left: auto;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        margin-left: 15px;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .properties-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonial-card {
+        flex: 0 0 80%;
+    }
+    
+    .app-download {
+        position: relative;
+        padding-bottom: 300px;
+    }
+    
+    .app-image {
+        height: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-section:last-child {
+        grid-column: span 2;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .property-grid,
+    .properties-grid,
+    .localities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .search-tabs {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .search-tab {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    .search-tab.active::after {
+        display: none;
+    }
+    
+    .hero-banner {
+        height: 300px;
+    }
+    
+    .hero-content h1 {
+        font-size: 24px;
+    }
+    
+    .hero-search {
+        flex-direction: column;
+    }
+    
+    .hero-search input {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    
+    .hero-search-btn {
+        border-radius: 4px;
+    }
+    
+    .testimonial-card {
+        flex: 0 0 90%;
+    }
+    
+    .app-buttons {
+        flex-direction: column;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-section:last-child {
+        grid-column: span 1;
+    }
+}
+
+/* Mobile Menu Toggle */
+.mobile-nav-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 

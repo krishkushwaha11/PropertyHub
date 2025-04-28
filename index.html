@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropertyHub - India's Largest Property Site</title>
+    <link rel="stylesheet" href="krish.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Notification Bar -->
+    <div class="top-notification">
+        <p>🏠 Find your dream home now! Explore 10L+ properties across India.</p>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <!-- Using an SVG logo that will always display -->
+                <svg class="logo" width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="180" height="40" fill="#FF6F00"/>
+                    <text x="20" y="28" font-family="Roboto" font-size="24" font-weight="bold" fill="white">PropertyHub</text>
+                </svg>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-tabs">
+                    <button class="search-tab active">Buy</button>
+                    <button class="search-tab">Rent</button>
+                    <button class="search-tab">Projects</button>
+                    <button class="search-tab">Commercial</button>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search by locality, project or landmark">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="user-actions">
+                <button class="btn login-btn">Login</button>
+                <button class="btn post-btn">Post Property</button>
+            </div>
+            
+            <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Apartments</a></li>
+            <li><a href="#">Villas</a></li>
+            <li><a href="#">Plots</a></li>
+            <li><a href="#">Builders</a></li>
+            <li><a href="#">Agents</a></li>
+            <li><a href="#">Loan</a></li>
+            <li><a href="#">Advice</a></li>
+        </ul>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-building"></i> Apartments</a></li>
+            <li><a href="#"><i class="fas fa-warehouse"></i> Villas</a></li>
+            <li><a href="#"><i class="fas fa-vector-square"></i> Plots</a></li>
+            <li><a href="#"><i class="fas fa-hard-hat"></i> Builders</a></li>
+            <li><a href="#"><i class="fas fa-user-tie"></i> Agents</a></li>
+            <li><a href="#"><i class="fas fa-rupee-sign"></i> Loan</a></li>
+            <li><a href="#"><i class="fas fa-lightbulb"></i> Advice</a></li>
+            <li><a href="#"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            <li><a href="#"><i class="fas fa-plus-circle"></i> Post Property</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')">
+        <div class="hero-content">
+            <h1>Find Your Perfect Home</h1>
+            <p>10L+ Properties | Trusted by 2M+ Users</p>
+            <div class="hero-search">
+                <input type="text" placeholder="Enter locality, city or project">
+                <button class="hero-search-btn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Types -->
+    <section class="property-types">
+        <h2 class="section-title">Browse by Property Type</h2>
+        <div class="property-grid">
+            <div class="property-card">
+                <div class="property-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>Apartments</h3>
+                <p>1.2L+ Properties</p>
+            </div>
+            <div class="property-card">
+                <div class="property-icon">
+                    <i class="fas fa-warehouse"></i>
+                </div>
+                <h3>Villas</h3>
+                <p>85K+ Properties</p>
+            </div>
+            <div class="property-card">
+                <div class="property-icon">
+                    <i class="fas fa-vector-square"></i>
+                </div>
+                <h3>Plots</h3>
+                <p>2.1L+ Properties</p>
+            </div>
+            <div class="property-card">
+                <div class="property-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <h3>Commercial</h3>
+                <p>45K+ Properties</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section class="featured-properties">
+        <div class="section-header">
+            <h2 class="section-title">Featured Properties</h2>
+            <a href="#" class="view-all">View All</a>
+        </div>
+        <div class="properties-grid">
+            <!-- Property 1 -->
+            <div class="property-item">
+                <div class="property-badge">Premium</div>
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Luxury Apartment in Mumbai">
+                <div class="property-details">
+                    <h3>Luxury Apartment in Mumbai</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Bandra West, Mumbai</p>
+                    <div class="price-area">
+                        <span class="price">₹1.2 Cr</span>
+                        <span class="area">1200 sq.ft</span>
+                    </div>
+                    <div class="features">
+                        <span><i class="fas fa-bed"></i> 3 BHK</span>
+                        <span><i class="fas fa-bath"></i> 2 Bath</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Property 2 -->
+            <div class="property-item">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Modern Villa in Bangalore">
+                <div class="property-details">
+                    <h3>Modern Villa in Bangalore</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Whitefield, Bangalore</p>
+                    <div class="price-area">
+                        <span class="price">₹2.5 Cr</span>
+                        <span class="area">2400 sq.ft</span>
+                    </div>
+                    <div class="features">
+                        <span><i class="fas fa-bed"></i> 4 BHK</span>
+                        <span><i class="fas fa-bath"></i> 3 Bath</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Property 3 -->
+            <div class="property-item">
+                <div class="property-badge">New</div>
+                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Residential Plot in Hyderabad">
+                <div class="property-details">
+                    <h3>Residential Plot in Hyderabad</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Gachibowli, Hyderabad</p>
+                    <div class="price-area">
+                        <span class="price">₹75 L</span>
+                        <span class="area">2000 sq.ft</span>
+                    </div>
+                    <div class="features">
+                        <span><i class="fas fa-vector-square"></i> Plot</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Property 4 -->
+            <div class="property-item">
+                <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Office Space in Delhi">
+                <div class="property-details">
+                    <h3>Office Space in Delhi</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Connaught Place, Delhi</p>
+                    <div class="price-area">
+                        <span class="price">₹50 L</span>
+                        <span class="area">800 sq.ft</span>
+                    </div>
+                    <div class="features">
+                        <span><i class="fas fa-store"></i> Commercial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Localities -->
+    <section class="popular-localities">
+        <h2 class="section-title">Popular Localities</h2>
+        <div class="localities-tabs">
+            <button class="locality-tab active">Mumbai</button>
+            <button class="locality-tab">Delhi NCR</button>
+            <button class="locality-tab">Bangalore</button>
+            <button class="locality-tab">Hyderabad</button>
+            <button class="locality-tab">Chennai</button>
+        </div>
+        <div class="localities-grid">
+            <div class="locality-card">
+                <h3>Bandra West</h3>
+                <p>1,200+ Properties</p>
+            </div>
+            <div class="locality-card">
+                <h3>Andheri West</h3>
+                <p>950+ Properties</p>
+            </div>
+            <div class="locality-card">
+                <h3>Powai</h3>
+                <p>780+ Properties</p>
+            </div>
+            <div class="locality-card">
+                <h3>Thane</h3>
+                <p>1,500+ Properties</p>
+            </div>
+            <div class="locality-card">
+                <h3>Dadar</h3>
+                <p>650+ Properties</p>
+            </div>
+            <div class="locality-card">
+                <h3>Malad West</h3>
+                <p>890+ Properties</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"Found my dream home in just 2 weeks! PropertyHub made the process so easy with their verified listings and expert advice."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rajesh Kumar">
+                    <div>
+                        <h4>Rajesh Kumar</h4>
+                        <p>Home Buyer, Mumbai</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"As a property seller, I got genuine buyers within days of listing. The platform is very effective for serious buyers and sellers."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma">
+                    <div>
+                        <h4>Priya Sharma</h4>
+                        <p>Property Seller, Delhi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download -->
+    <section class="app-download">
+        <div class="app-content">
+            <h2>Download PropertyHub App</h2>
+            <p>Get instant alerts for new properties and connect directly with sellers</p>
+            <div class="app-buttons">
+                <a href="#" class="app-btn">
+                    <i class="fab fa-google-play"></i>
+                    <span>GET IT ON<br><strong>Google Play</strong></span>
+                </a>
+                <a href="#" class="app-btn">
+                    <i class="fab fa-apple"></i>
+                    <span>Download on the<br><strong>App Store</strong></span>
+                </a>
+            </div>
+        </div>
+        <div class="app-image">
+            <img src="https://via.placeholder.com/300x500.png?text=Mobile+App" alt="Mobile App">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>PropertyHub</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Buy</h3>
+                <ul>
+                    <li><a href="#">Apartments</a></li>
+                    <li><a href="#">Villas</a></li>
+                    <li><a href="#">Plots</a></li>
+                    <li><a href="#">Builder Floors</a></li>
+                    <li><a href="#">Farm Houses</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Rent</h3>
+                <ul>
+                    <li><a href="#">House for Rent</a></li>
+                    <li><a href="#">Flat for Rent</a></li>
+                    <li><a href="#">PG / Hostel</a></li>
+                    <li><a href="#">Shop / Office</a></li>
+                    <li><a href="#">Vacation Rental</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Commercial</h3>
+                <ul>
+                    <li><a href="#">Office Space</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Warehouse</a></li>
+                    <li><a href="#">Showroom</a></li>
+                    <li><a href="#">Industrial Land</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h4>Subscribe to Newsletter</h4>
+                    <div class="newsletter-input">
+                        <input type="email" placeholder="Your Email">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 PropertyHub. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Sitemap</a>
+                <a href="#">FAQ</a>
+                <a href="#">Feedback</a>
+                <a href="#">Advertise With Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
